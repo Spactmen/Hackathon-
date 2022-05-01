@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+</head>
+
+<body>
+    <header class="header">
+        <img src="images/logo4.png" alt="our main logo" class="logo" />
+
+        <nav class="navbar">
+            <ul class="navbar-lists">
+                <li><a href="/index.html" class="navbar-link home-link">Home</a></li>
+                <li>
+                    <a href="#states" class="navbar-link about-link">States</a>
+                </li>
+                <li>
+                    <a class="navbar-link service-link" href="/service.html">Services</a>
+                </li>
+                <li>
+                    <a class="navbar-link portfolio-link" href="#portfolio"></a>
+                </li>
+                <li>
+                    <a class="navbar-link contact-link btn-1" href="/loginindex..html">Admin</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section-hero section">
+            <div class="container grid grid-two-column">
+                <!-- hero section right side  -->
+                <div class="section-hero-image">
+                    <picture>
+                        <!-- <source srcset="images/hero.webp" type="image/webp" />
+                        <source srcset="images/hero-min.jpg" type="image/jpg" /> -->
+                        <img src="images/modi.jpeg" alt="this is me thapa technical" class="hero-img" />
+                    </picture>
+                </div>
+                <div class="section-hero-data">
+                    <!-- <p class="hero-top-data">this is me</p> -->
+                    <h1 class="hero-heading">Prime Minister </h1>
+                    <p class="hero-para">
+                        India is riding acycle to destination called developed country.One wheel is swachh bharth and the other is swachh Governance.I dream of a digital India where access to information knows no barrier.
+                    </p>
+                    <span>-Shri Narendra Modi</span>
+                    <div>
+                        <a href="https://en.wikipedia.org/wiki/Narendra_Modi" class="btn hireme-btn">wikipedia</a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!-- SEction 2 ramnadh kovind -->
+            <div class="container grid grid-two-column">
+                <!-- hero section right side  -->
+                <div class="section-hero-data-2">
+                    <!-- <p class="hero-top-data">this is me</p> -->
+                    <h1 class="hero-heading">President </h1>
+                    <p class="hero-para">
+                        This e-RTI brings the all information and gives the count every rupee you contributed.
+e-RTI leads to effective implemenntation of digital India.India is riding acycle to destination called developed country.One wheel is swachh bharth and the other is swachh Governance.I dream of a digital India where access to information knows no barrier. e-RTI clears out choas and barrier between Government and citizens.
+                    </p>
+                    <div>
+                        <a href="https://en.wikipedia.org/wiki/Ram_Nath_Kovind" class="btn hireme-btn">Wikipedia</a>
+                    </div>
+                </div>
+                <div class="section-hero-image">
+                    <picture>
+                        <!-- <source srcset="images/hero.webp" type="image/webp" />
+                        <source srcset="images/hero-min.jpg" type="image/jpg" /> -->
+                        <img src="images/ramnath.jpg" alt="this is me thapa technical" class="hero-img" />
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section id="states">
+            <br>
+            <br>
+            <br>
+            <br><br>
+            <br>
+            <br>
+            <div class="container">
+                <h1 class="hero-heading state"> Select your State</h1>
+                <div class="buttons-flex">
+                    <div>
+                        <a href="/ap.html" class="btn hireme-btn">Andhra Pradesh</a>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="/telangana.html" class="btn hireme-btn">Telangana</a>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="#" class="btn hireme-btn">Delhi </a>
+                    </div>
+                    <br>
+                    <div>
+                        <a href="#" class="btn hireme-btn">Karnataka</a>
+                    </div>
+                    <br>
+
+                    <div>
+                        <a href="#" class="btn hireme-btn">TamilNadu</a>
+                    </div>
+                    <br>
+
+
+                </div>
+                <br>
+                <br>
+                <br>
+                <br><br>
+                <br>
+                <br>
+                <div class="section-hero-image">
+                    <picture>
+                        <img src="images/Indiamap.jpg" alt="this is me thapa technical" class="hero-img-3" />
+                    </picture>
+                </div>
+                <div class="container-1">
+                  <input name="select_value" type="hidden" id="selectedValue">
+                  <div class="display-value" id="displayValue" onclick="toggleOptions(event)">
+                     <span class="value-text" id="valueText">Select</span>
+                     <span class="arrow arrow-down" id="arrowControl"></span>
+                  </div>
+                  <ul tabindex="0" class="select-container" id="selectContainer" onblur="toggleOptions(event)">
+                     <li class="select-option" onclick="selected('Opt1')">Opt1</li>
+                     <li class="select-option" onclick="selected('Opt2')">Opt2</li>
+                     <li class="select-option" onclick="selected('Opt3')">Opt3</li>
+                  </ul>
+                <!-- <div class="container-1">
+                    <input name="select_value" type="hidden" id="selectedValue">
+                    <div class="display-value" id="displayValue" onclick="toggleOptions(event)">
+                        <span class="value-text" id="valueText">Select</span>
+                        <span class="arrow arrow-down" id="arrowControl"></span>
+                    </div>
+                    <ul tabindex="0" class="select-container" id="selectContainer" onblur="toggleOptions(event)">
+                        <li class="select-option" onclick="selected('AndhraPradesh')">Andhra Pradesh</li>
+                        <li class="select-option" onclick="selected('Arunachal Pradesh')">Arunachal Pradesh</li>
+                        <li class="select-option" onclick="selected('Bihar')">Bihar </li>
+                        <li class="select-option" onclick="selected('Chhattishgarh')">Chhattishgarh </li>
+                        <li class="select-option" onclick="selected('Gujarat')">Gujarat </li>
+                        <li class="select-option" onclick="selected('Goa')">Goa  </li>
+                        <li class="select-option" onclick="selected('Gujaratpt3')">Gujarat </li>
+                        <li class="select-option" onclick="selected('Haryana')">Haryana </li>
+                        <li class="select-option" onclick="selected('Jammu & Kashmir')">Jammu & Kashmir </li>
+                        <li class="select-option" onclick="selected('Karnataka')">Karnataka </li>
+                        <li class="select-option" onclick="selected('Kerala')">Kerala </li>
+                    </ul>
+                </div> -->
+
+            </div>
+
+        </section>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        </bbr>
+        <section class="section section-work-data">
+            <div class="container grid grid-four-column">
+                <div>
+                    <h2 class="counter-numbers" data-number="2000">0+</h2>
+                    <p class="count-para">Upcoming projects</p>
+                </div>
+                <div>
+                    <h2 class="counter-numbers" data-number="6000">0+</h2>
+                    <p class="count-para">Completed projects</p>
+                </div>
+                <div>
+                    <h2 class="counter-numbers" data-number="5000">0+</h2>
+                    <p>Ongoing projects</p>
+                </div>
+                <div>
+                    <h2 class="counter-numbers" data-number="3000">0+</h2>
+                    <p>Foreign Investments</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- <section class="section section-services">
+    <div class="container grid grid-three-column container-1" >
+        <div class="service-box">
+          <img src="images/in1.webp" class="project-img">
+          <h3>Defense</h3>
+          <p>
+            "The total budget sanctioned for the Indian military for the financial year 2021 is ₹4.78 lakh crore (US$63 billion). It has the fourth largest annual defence budget behind USA (US$732 b) and China (US$261 b)."
+          </p>
+        </div>
+        
+        <div class="service-box">
+          <img src="images/in2.webp" class="project-img">
+          <h3>Space Research</h3>
+          <p>
+            “To achieve complete self reliance in terms of these applications, it was essential to develop cost efficient and reliable launch systems, which took shape in the form of the Polar Satellite Launch Vehicle (PSLV).”
+          </p>
+        </div>
+        
+        <div class="service-box">
+          <img src="images/in3.webp" class="project-img">
+          <h3>Tourism</h3>
+          <p>
+            “India is the 8th largest country in terms of contribution to travel & tourism GDP. The Tourism industry in India generated USD 247.3 Bn ”
+          </p>
+        </div>
+       
+        <div class="service-box">
+          <img src="images/in4.webp" class="project-img">
+          <h3>Irrigation</h3>
+          <p>
+            “The Tehri Dam is a multi-purpose rock and earth-fill embankment dam on the Bhagirathi River near Tehri in Uttarakhand, which is the primary dam of the Tehri Hydro Development Corporation Ltd.”
+          </p>
+        </div>
+  
+        <div class="service-box">
+          <img src="images/in5.webp" class="project-img">
+          <h3>Agriculture</h3>
+          <p>
+            “As per the Union Budget of India 2020-21, allocation of $40.06 bn was made to the Ministry of Agriculture. India ranks first in the number of organic farmers and ninth in terms of area under organic farming. ”
+          </p>
+        </div>
+      
+        <div class="service-box">
+          <img src="images/in6.jpg" class="project-img">
+          <h3>Health</h3>
+          <p>
+            “India's healthcare industry has been growing at a Compound Annual Growth Rate of around 22% since 2016. At this rate, it is expected to reach USD 372 Billion in 2022.”
+          </p>
+        </div>
+    </section> -->
+    <!-- About us  -->
+</section>
+
+<section id="" class="section section-services">
+    <center><h1 class="hero-heading income-head">Projects</h1></center> 
+    <br>
+    <br>
+    <br>
+
+    <!-- <div class="container">
+      <h2 class="common-heading">Services Offers</h2>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem ex
+        dolores tempore possimus, mollitia vero quas
+      </p>
+    </div> -->
+
+    <!-- services offers card  -->
+    <div class="container grid grid-three-column" >
+      <div class="service-box">
+        <img src="images/in1.webp" class="project-img">
+        <h3>Defe</h3>
+        <p>
+          “The total budget sanctioned for the Indian military for the financial year 2021 is ₹4.78 lakh crore (US$63 billion). It has the fourth largest annual defence budget behind USA (US$732 b) and China (US$261 b).”
+        </p>
+      </div>
+
+      <div class="service-box">
+
+        
+        <img src="images/in2.webp" class="project-img">
+        <h3>Space Research</h3>
+        <p>
+          “To achieve complete self reliance in terms of these applications, it was essential to develop cost efficient and reliable launch systems, which took shape in the form of the Polar Satellite Launch Vehicle (PSLV)”
+        </p>
+      </div>
+
+      <div class="service-box">
+        <!-- <ion-icon name="camera-sharp" class="service-icon"></ion-icon> -->
+        <img src="images/in3.webp" class="project-img">
+        <h3>Tourism</h3>
+        <p>
+          “India is the 8th largest country in terms of contribution to travel & tourism GDP. The Tourism industry in India generated USD 247.3 Bn .”
+        </p>
+      </div>
+
+      <div class="service-box">
+        <img src="images/in4.jpg" class="project-img">
+        <h3>Irrigation</h3>
+        <p>
+          “he Tehri Dam is a multi-purpose rock and earth-fill embankment dam on the Bhagirathi River near Tehri in Uttarakhand, which is the primary dam of the Tehri Hydro Development Corporation Ltd”
+        </p>
+      </div>
+
+      <div class="service-box">
+        <img src="images/in8.jpg" class="project-img">
+        <h3>Agriculture</h3>
+        <p>
+            “As per the Union Budget of India 2020-21, allocation of $40.06 bn was made to the Ministry of Agriculture. India ranks first in the number of organic farmers and ninth in terms of area under organic farming ”
+        </p>
+      </div>
+
+      <div class="service-box">
+        <img src="images/in6.jpg" class="project-img">
+        <h3>Health</h3>
+        <p>
+          “India's healthcare industry has been growing at a Compound Annual Growth Rate of around 22% since 2016. At this rate, it is expected to reach USD 372 Billion in 2022..”
+        </p>
+      </div>
+    </div>
+  </section>
+  
+
+     <footer>
+       <div class="content">
+         <div class="left box">
+           <div class="upper">
+             <div class="topic">About us</div>
+             <p>e-RTI brings all the information of india and gives the count of every rupee you've contributed .</p>
+           </div>
+           <div class="lower">
+             <div class="topic">Contact us</div>
+             <div class="phone">
+               <a href="#"><i class="fas fa-phone-volume"></i>+007 9089 6767</a>
+             </div>
+             <div class="email">
+               <a href="#"><i class="fas fa-envelope"></i>abc@gmail.com</a>
+             </div>
+           </div>
+         </div>
+         <div class="middle box">
+           <div class="topic">Our Services</div>
+           <div><a href="#">Web Design, Development</a></div>
+           <div><a href="#">Web UX Design, Reasearch</a></div>
+           <div><a href="#">Web User Interface Design</a></div>
+           <div><a href="#">Theme Development, Design</a></div>
+           <div><a href="#">Mobile Application Design</a></div>
+           <div><a href="#">Wire raming & Prototyping</a></div>
+         </div>
+         <div class="right box">
+           <div class="topic">Subscribe us</div>
+           <form action="#">
+             <input type="text" placeholder="Enter email address">
+             <input type="submit" name="" value="Send">
+             <div class="media-icons">
+               <a href="#"><i class="fab fa-facebook-f"></i></a>
+               <a href="#"><i class="fab fa-instagram"></i></a>
+               <a href="#"><i class="fab fa-twitter"></i></a>
+               <a href="#"><i class="fab fa-youtube"></i></a>
+               <a href="#"><i class="fab fa-linkedin-in"></i></a>
+             </div>
+           </form>
+         </div>
+       </div>
+       <div class="bottom">
+         <p>Copyright © 2020 <a href="#">INDIA</a> All rights reserved</p>
+       </div>
+     </footer>
+    <script src="app.js"></script>
+</body>
+
+</html>
